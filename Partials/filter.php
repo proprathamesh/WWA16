@@ -189,7 +189,7 @@
                 filterUrl += `&location=${locationVal}`
             }
             // console.log(locationVal)
-            window.location = filterUrl
+            window.location = "./home.php?job=Internship"
         }
 
 

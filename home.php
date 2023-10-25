@@ -18,7 +18,12 @@
         <?php require "./Partials/filter.php" ?>
         <div class="col-7">
             <?php
+            if (isset($_GET['job'])) {
+                $sql =  "select * from job_info where jobType = 'Internship'";
+            }
+            else{
                 $sql = "select * from job_info";
+            }
                 $result = mysqli_query($conn, $sql);
                 $num = mysqli_num_rows($result);
                 for ($i=0; $i < $num; $i++) {
