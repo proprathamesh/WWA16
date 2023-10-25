@@ -32,9 +32,9 @@
                 <div>Working Location</div>
             </div>
             <div class="location">
-                <div class="search-bar">
+                <div class="search-bar position-relative">
                     <input type="text" oninput="locationSuggest()" id="location" class="w-100" placeholder="Enter Location">
-                    <ul id="location-suggestion"></ul>
+                    <ul id="location-suggestion" class=""></ul>
                 </div>
                 <div class="mt-2" id="location-list">
                 </div>
@@ -142,7 +142,7 @@
         }
 
         function applyFilter() {
-            let filterUrl = "./search.php?"
+            let filterUrl = "./home.php?"
             let filterIds = []
             let count = 0
             
